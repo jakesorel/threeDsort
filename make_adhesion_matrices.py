@@ -46,6 +46,6 @@ def get_adhesion_matrix(nE,nT,nX):
 nc = nE + nT + nX
 for i in range(n_iter):
     adhesion_vals = get_adhesion_matrix(nE,nT,nX)
-    adhesion_vals_full = np.zeros((nc+8,nc+8))
+    adhesion_vals_full = np.ones((nc+8,nc+8))
     adhesion_vals_full[8:,8:] = adhesion_vals
-    np.savez("adhesion_matrices/%i.npz"%i,adhesion_vals=adhesion_vals)
+    np.savez("adhesion_matrices/%i.npz"%i,adhesion_vals=adhesion_vals_full)

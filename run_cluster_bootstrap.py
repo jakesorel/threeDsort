@@ -40,7 +40,7 @@ if __name__ == "__main__":
         return d0*kA/(dmax-d0)
 
     tissue_params = {"kappa_adhesion":np.array(((0,0,0,0),(0,0,0,0),(0,0,0,0),(0,0,0,0))),
-                     "kappa_repulsion":np.array(((0,0,0,1),(0,0,0,1),(0,0,0,1),(1,1,1,1))),
+                     "kappa_repulsion":np.array(((0,0,0,0),(0,0,0,0),(0,0,0,0),(0,0,0,0))),
                      "dmax":1.0}
     init_params = {"n_E":12,"n_T":20,"n_X":10,"box":box,"xlim":[-1,1]}
 
