@@ -10,7 +10,7 @@ from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import connected_components
 from scipy.stats import nakagami
 
-if __name__ is "__main__":
+if __name__ == "__main__":
 
     if not os.path.exists("results"):
         os.mkdir("results")

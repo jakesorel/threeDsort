@@ -4,8 +4,8 @@
 
 #SBATCH --time=0:50:00   # walltime
 #SBATCH -J "3d_simul"   # job name
-#SBATCH --output=../bash_out/output.out
-#SBATCH --error=../bash_out/error.out
+#SBATCH --output=bash_out/output.out
+#SBATCH --error=bash_out/error.out
 #SBATCH -n 1
 #SBATCH --partition=cpu
 #SBATCH --mem=2G
