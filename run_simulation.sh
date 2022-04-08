@@ -14,8 +14,8 @@
 eval "$(conda shell.bash hook)"
 source activate synmorph
 
-#python run_cluster_bootstrap.py ${SLURM_ARRAY_TASK_ID} "$1"
-python run_cluster_bootstrap.py "$1" "$2"
+python run_cluster_bootstrap.py ${SLURM_ARRAY_TASK_ID} "$1"
+#python run_cluster_bootstrap.py "$1" "$2"
 
 #
 #((jp1 = "$1" + 1))
